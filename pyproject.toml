@@ -1,0 +1,67 @@
+[project]
+name = "Your project name"
+authors = [
+    {name = "Your name", email = "Your email"}
+]
+description = "Your description"
+readme = "README.md"
+requires-python = ">=3.8.1"
+
+# Ruff settings
+
+[tool.ruff]
+
+line-length = 79
+indent-width = 4
+target-version = "py38"
+show-fixes = true
+
+exclude = [
+    ".git",
+    ".github",
+    ".pytest_cache",
+    ".venv",
+    ".vscode",
+    ".idea",
+    ".ruff_cache",
+]
+src = ["src", "tests"]
+
+[tool.ruff.pydocstyle]
+convention = "google"
+
+[tool.ruff.pycodestyle]
+max-doc-length = 79
+
+
+[tool.ruff.lint]
+# Enable Pyflakes (`F`) and a subset of the pycodestyle (`E`)  codes by default.
+select = ["A", "ISC", "RUF", "D", "B", "E", "F", "UP", "W"]
+ignore = ["D205"]
+extend-select = ["E501"]
+
+# Allow fix for all enabled rules (when `--fix`) is provided.
+fixable = ["ALL"]
+unfixable = []
+
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.format]
+# Like Black, use double quotes for strings.
+quote-style = "double"
+
+# Like Black, indent with spaces, rather than tabs.
+indent-style = "space"
+
+# Like Black, respect magic trailing commas.
+skip-magic-trailing-comma = false
+
+# Like Black, automatically detect the appropriate line ending.
+line-ending = "auto"
+
+# Add preview functionalities
+preview = true
+
+
+

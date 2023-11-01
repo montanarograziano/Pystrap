@@ -1,0 +1,11 @@
+pipenv
+pytest
+toml
+mkdocs
+mkdocstrings
+mkdocstrings-python
+tomli
+ruff
+mkdocs-material
+pydocstringformatter
+ipykernel

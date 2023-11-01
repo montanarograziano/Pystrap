@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pytest = "*"
+toml = "*"
+mkdocs = "*"
+mkdocstrings = "*"
+mkdocstrings-python = "*"
+tomli = "*"
+ruff = "*"
+mkdocs-material = {extras = ["imaging"], version = "*"}
+pydocstringformatter = "*"
+
+
+
+[dev-packages]
+ipykernel = "*"
+
+[requires]
+python_version = ">3.8"
