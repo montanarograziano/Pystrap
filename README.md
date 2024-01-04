@@ -6,7 +6,7 @@ Pystrap aims at simplyfing all the necessary (and redundant) steps needed during
 
 I find myself doing the same actions everytime I start a new python project, and so I thought _why not automate it?_
 
-The idea is create a CLI and package it so that it can be used with something like `pystrap init`, but for now just cloning the repo would be sufficient and running the necessary instructions would be sufficient.
+The idea is create a CLI and package it so that it can be used with something like `pystrap init`, but for now just cloning the repo and running the necessary instructions would be sufficient.
 
  ## What it does
 
@@ -27,7 +27,7 @@ The three main folders are:
 - **docs** -> Contains the documentation.
 
 ## Documentation settings
-The tool I use to build the documentation is [mkdocs-material](https://squidfunk.github.io/mkdocs-material/). It works **mkdocs.yml** file which can be used to configure the theming, navigation and other plugins. Markdown code can be places inside the **docs** folder.
+The tool I use to build the documentation is [mkdocs-material](https://squidfunk.github.io/mkdocs-material/). It works with a **mkdocs.yml** file which can be used to configure the theming, navigation and other plugins. Markdown code can be places inside the **docs** folder.
 
 
 
